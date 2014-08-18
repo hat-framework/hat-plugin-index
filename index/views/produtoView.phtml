@@ -1,0 +1,42 @@
+<style>
+    .content{margin:20px 20px}
+    h4{font-size:30px;
+       line-height: 40px;
+       text-rendering: optimizelegibility;
+       text-align:justify;
+       font-weight: normal;
+    }
+    img{float:left;}
+    h1{font-size:40px;line-height: 50px;}
+    h5{font-size:24px;
+       line-height: 30px;
+       text-rendering: optimizelegibility;
+       text-align:justify;
+       font-weight: normal;}
+</style>
+<?php 
+$this->Html->LoadJS('contador/contadorRegressivo');
+$link = $this->Html->getLink('index/produtomais'); 
+$linkprojeto = $this->Html->getLink('carteira/index/index'); 
+?>
+<script>
+window.onload=function(){
+atualizaContador('2014','06','01','00','00','contador');
+}
+</script>
+<h1><?php $this->Html->LoadImage('logomedia.png'); ?> GERENCIADOR DE INVESTIMENTOS - com calculadora de imposto de renda</h1>
+<div class="content">
+    <div class="span4"></div>
+    <div class="span6">
+        <h4>
+            Pré-venda: R$99,90<br>
+            Direito de uso: Tempo indeterminado<br>
+            Produto pronto em: 01/nov/2014<br>
+            <div class="pull-left"> Ajuste preço em: </div> <div id="contador"></div><br>
+            <a class="btn btn-success btn-large" href="https://www.hotmart.net.br/order/checkout/pay.html?order=P1605223P&cid=236803">Comprar Agora!</a>
+            <a class="btn btn-warning btn-large" href="<?php echo $link; ?>">Ver detalhes</a>
+            <a class="btn btn-info btn-large" href="<?php echo $linkprojeto; ?>">Projeto em andamento</a>
+        </h4>
+    </div>
+    <center><iframe width="853" height="480" src="//www.youtube.com/embed/OB-RUeR8vmk" frameborder="0" allowfullscreen></iframe></center>
+</div>

@@ -1,0 +1,50 @@
+
+<style>
+    #conteudo{margin:0 !important;}
+    .navbar{display:none}
+    .sub-footer{display:none}
+    .footer{display:none}
+    .clearfix{display:none}
+    hr{display:none}
+    .write{position:absolute;top:120;}
+    img:hover {opacity:0.7;filter:alpha(opacity=70);}
+    h6{font-size:30px;line-height:30px;}
+    #content{margin-top:0;}
+    .description-container .description-text {
+        margin-left:-250px;
+    }
+    h4,h1{line-height: 30px;font-style: normal;}
+    strong{text-decoration: underline }
+</style>
+<div class="span2"><h6><?php $this->Html->LoadImage('logo/logoalta.png'); ?></h6></div>
+<div class="span10"><h6> PLATAFORMA PARA ANÁLISE E GESTÃO DE INVESTIMENTOS</h6></div>
+
+
+    
+
+<div class='span6 pull-right'><br>
+    <div class='span11'>
+        <?php
+        $this->Html->LoadCss('tela_login');
+        $this->LoadComponent('usuario/login', 'lcomp');
+        $this->lcomp->tela_login();
+        $this->lcomp->Subscribe();
+        ?>
+    </div>
+</div>
+
+<div class="span6">
+    <br>
+    <h4>
+        <i class="icon-ok"></i> Histórico dos Demonstrativos Financeiros;<br>
+        <i class="icon-ok"></i> Histórico de Indicadores Fundamentalistas;<br>
+        <i class="icon-ok"></i> Gráficos Customizados;<br>
+        <i class="icon-ok"></i> Histórico de Cotações;<br>
+        <i class="icon-ok"></i> Histórico de Dividendos e JCP;<br>
+        <i class="icon-ok"></i> Informações cadastrais das empresas;<br>
+        <i class="icon-ok"></i> Gerenciador de Carteira de Investimentos;<br>
+        <i class="icon-ok"></i> Filtro de Ações;<br>
+        <i class="icon-ok"></i> Comparar Performace de Ações;<br>
+    </h4><br>    
+<?php $this->Html->LoadImage('crescimento.png'); ?>
+</div>

@@ -1,0 +1,83 @@
+<style>
+    #menu-dropdown{position:fixed;background-color: #fafafa;}
+    h1{font-size:35px;line-height: 50px;
+       margin: 20px 0 0 20px;}
+    h4 {font-size:20px;
+       line-height: 30px;
+       text-rendering: optimizelegibility;
+       text-align:justify;
+       margin: 20px 0 0 20px;
+       font-weight: normal;
+    }
+    
+</style>
+<br>
+<br>
+<div class='span7'>
+    <div id='patrimonial'>
+        <h1>Balanço Patrimonial</h1>
+        <h4>
+           As empresas listadas emitem de forma separada o Balanço Patrimonial - Ativo e o 
+           Balanço Patrimonial - Passivo, porém estes devem ser entendidos como um só, um espelho, 
+           em que a quantidade de Ativos Totais sempre será igual a quantidade de Passivos somado ao Patrimônio Líquido.
+           <br>
+           <b>Ativos = Passivo + Patrimônio Líquido.</b>
+           <br>
+            <?php $this->Html->LoadImage('patrimonial.png'); ?>
+        </h4>
+    </div>
+    
+    <div id='dre'>
+        <h1>DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO - DRE</h1>
+        <h4>
+          Evidencia a formação do resultado líquido em um exercício, através do confronto das receitas, custos e resultados. DRE’s disponíveis publicamente pelas as empresas listadas são elaboradas com exercício de 3 meses e ao término do ano é elaborado com o exercício de 12 meses.
+          <br>
+    <b>Receita Bruta</b><br>
+(+) Faturamento da empresa<br><br>
+
+<b>Receita Líquida (Receita de Venda de Bens e/ou Serviços)</b><br>
+(+) Receita Bruta<br>
+(-) Devoluções<br>
+(-) Descontos concedidos<br>
+(-) Impostos incidentes sobre a mercadoria (ISS, ICMS, PIS/COFINS)<br><br>
+
+<b>Resultado bruto</b><br>
+(+) Receita Líquida<br>
+(-) Custo dos Bens e/ou Serviços Vendidos (inclui frete e seguros sobre compras de insumos)<br><br>
+
+ <b>Resultado Antes do Resultado Financeiro e dos Tributos (EBIT ou LAJIR)</b><br>
+(+) Resultado bruto<br>
+(-) Despesa com vendas<br>
+(-) Despesas gerais administrativas<br>
+(-) Pesquisa e desenvolvimento<br>
+(-) Resultado de equivalência patrimonial<br>
+(-) Outras despesas operacionais<br>
+(+) Outras receitas operacionais<br><br>
+
+<b>Resultado Operacional (Resultado Antes dos Tributos sobre o Lucro) </b><br>
+(+) Resultado Antes do Resultado Financeiro e dos Tributos<br>
+(-) Despesas financeiras<br>
+(+) Receitas financeiras<br><br>
+
+<b>Resultado Líquido (Lucro/Prejuízo do Período)</b><br>
+(+) Resultado Operacional<br>
+(-) Impostos<br>
+
+        </h4>
+    </div>
+    
+    <div id='dfc'>
+        <h1>Demonstração Fluxo de Caixa – DFC</h1>
+        <h4>
+            O objetivo dessa demonstração é evidenciar entradas e saídas de capital, subdividas em três grupos: operações da empresa, financiamento realizados e investimentos realizados. 
+            Obs: Lucro/prejuízos divulgados na DRE, não quer dizer necessariamente entradas e saídas de capital. Para isso serve a DFC.
+
+            Segue um exemplo de como
+            <?php $this->Html->LoadImage('dfc.png'); ?>
+        </h4>
+    </div>
+</div>  
+<div class='span4'>
+   
+    
+</div>
