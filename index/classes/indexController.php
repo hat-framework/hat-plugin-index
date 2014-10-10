@@ -3,6 +3,7 @@ class indexController extends \classes\Controller\Controller{
     public $model_name = 'index/index';
     
     public function index(){
+        //die($this->LoadModel('usuario/perfil', 'model')->hasPermissionByName('index') === false?"f":"t");
          if(\usuario_loginModel::CodUsuario() !== 0)Redirect('empresa/index');
           $this->genTags(
                 "Finance-e, Plataforma para análise e gestão de investimentos", 
